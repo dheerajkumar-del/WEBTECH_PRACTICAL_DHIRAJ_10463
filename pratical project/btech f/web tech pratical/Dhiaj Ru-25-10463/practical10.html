@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Responsi<!ve Web Page (One Media Query)</title>
+  <style>
+    /* Mobile-First Base Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+    }
+    nav {
+      background-color: #005fa3;
+      text-align: center;
+      padding: 1em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+      font-size: 1em;
+    }
+    main {
+      padding: 2em 5vw;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+    article, aside {
+      background-color: white;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+      }
+      article {
+        flex: 3;
+      }
+      aside {
+        flex: 1;
+      }
+      nav a {
+        font-size: 1.1em;
+      }
+      header {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Web Page</h1>
+    <p>Using One Media Query (Mobile-First)</p>
+  </header>
+  <main>
+    <div class="container">
+      <article>
+        <h2>Main Content</h2>
+        <p>
+          This layout is mobile-friendly by default. When the screen width reaches 768px or more,
+          the article and sidebar are displayed side by side.
+        </p>
+      </article>
+      <aside>
+        <h3>Sidebar</h3>
+        <p>
+          On smaller screens, this sidebar appears below the main content. Resize your browser to see the change!
+        </p>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Responsive Demo | All rights reserved</p>
+  </footer>
+</body>
+</html>

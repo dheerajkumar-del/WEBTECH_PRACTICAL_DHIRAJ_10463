@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event d elegation demo </title>
+    </head>
+    <body>
+        <h1>event d elegation demo</h1>
+        <div id="button-container" style="border:5px solid rgb(238, 4, 23);padding: 30px;px;">
+        <button="btn1"data-color="Red">Button 1(Red)</button> 
+        <button="btn2"data-color="Green">Button 2(Green)</button> 
+        <button="btn3"data-color="Yellow">Button 3(Yellow)</button> 
+    </div>
+    <p id="output">click on any button above to see delegation.</p>
+    <script>
+        const parentDiv= document.getElementById("button-container");
+        const output =document.getElementById("output");
+        parentdiv.addEventlistner("click",function(event){
+            const clickedelement =event.target;
+            if(clickelement.tagname==='button'){
+                const color=clickedelement.getAttribute('data-color');
+                const bynid=clickelement.id;            }
+        }
+
+
+
+
+    </script>
+    </body>
+</html>

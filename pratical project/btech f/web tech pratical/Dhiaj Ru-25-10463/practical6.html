@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Styling Example</title>
+
+    <!-- External CSS -->
+  <link rel="stylesheet" href="P6_external.css">
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      color: darkblue;
+      text-align: center;
+    }
+    p {
+      color: #555;
+    }
+    .internal-box {
+      background-color: lightyellow;
+      border: 1px solid gold;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Inline CSS Example -->
+  <h1 style="color: green; text-align: center;">
+    Inline, Internal, and External CSS Demo
+  </h1>
+
+  <div class="internal-box">
+    <h2>Internal CSS Example</h2>
+    <p>This section is styled using <strong>internal CSS</strong> from the &lt;style&gt; tag in the HTML head.</p>
+  </div>
+
+  <div class="external-box">
+    <h2>External CSS Example</h2>
+    <p>This section uses <strong>external CSS</strong> from the linked <em>style.css</em> file.</p>
+  </div>
+
+  <p style="color: red; font-weight: bold;">
+    This line is styled using inline CSS directly inside the tag.
+  </p>
+</body>
+</html>

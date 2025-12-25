@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Div and Span Layout Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .header {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .nav {
+      background-color: #005fa3;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .nav span {
+      color: white;
+      margin: 0 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .content {
+      display: flex;
+      margin: 20px;
+      gap: 20px;
+    }
+
+    .left, .right {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .left {
+      flex: 3;
+    }
+
+    .right {
+      flex: 1;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    .highlight {
+      background-color: yellow;
+      color: black;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>My Webpage Using Div and Span</h1>
+    <p>Layout and styling demonstration</p>
+  </div>
+
+  <div class="nav">
+    <span>Home</span>
+    <span>About</span>
+    <span>Services</span>
+    <span>Contact</span>
+  </div>
+
+  <div class="content">
+    <div class="left">
+      <h2>Main Content Area</h2>
+      <p>This is the main section of the webpage, placed inside a <code>&lt;div&gt;</code>.
+         It contains the primary information and uses the <span class="highlight">&lt;span&gt;</span> 
+         tag to highlight specific words inline.</p>
+    </div>
+
+    <div class="right">
+      <h3>Sidebar</h3>
+      <p>This sidebar is another <code>&lt;div&gt;</code> placed beside the main content using flexbox layout.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 My Website | Designed with CSS and HTML</p>
+  </div>
+</body>
+</html>
